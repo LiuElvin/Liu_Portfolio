@@ -1,5 +1,9 @@
-# ePortfolio
+# About Page - Honors Prgoram ePortfolio
 Statistics Honors Program ePortfolio
+
+A section that collects the Projects.  The About page should be a narrative of the content of the ePorfolio and of its scope. As students prepare the ePorfolio, they should identify an audience (e.g. academia, industry) and they should tailor the ePorfolio to that audience. ePorfolios should be created using Github.
+
+In addition to any final products (e.g., reports), each project included in the ePortfolio should contain code, and it should be accompanied by a narrative that provides the context of the project, the learning outcomes and the student’s individual contribution. 
 
 # [Project 1: Ad hoc Network](https://github.com/LiuElvin/302_Final_Project)
 * Something
