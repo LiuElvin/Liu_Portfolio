@@ -27,19 +27,20 @@ If time permits, students will implement PDA to analyze a real-life dataset of t
 * Something
 * Something
 
-# [Project 4: Ad hoc Network](https://github.com/LiuElvin/302_Final_Project)
+# [Project 4: Tentative](https://github.com/LiuElvin/302_Final_Project)
 * Something
 * Something
 * Something
 * Something
 * Something
 
-# [Project 5: Ad hoc Network](https://github.com/LiuElvin/302_Final_Project)
+# [Project 5: Tentative](https://github.com/LiuElvin/302_Final_Project)
 * Something
 * Something
 * Something
 
 # Tentative Plans
 * DataFest
+*   Next year
 * Winter STAT 498 Special Topics Project w/ Wadsworth
 * Tango Dancing Project or Survey Project w/ Prof. Emanuela Furfaro
