@@ -10,8 +10,6 @@ Statistics Honors Program ePortfolio
 * Something
 * Something
 
----
-
 # Project 2: SPA DRP
 Blah Blah Blah
 Blah Blah Blah
