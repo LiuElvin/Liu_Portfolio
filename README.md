@@ -1,5 +1,6 @@
-# About Page - Honors Prgoram ePortfolio
-Statistics Honors Program ePortfolio
+# About Page - Elvin Liu's ePortfolio
+
+Welcome! The assortment of projects below are part of my ePortfolio for the Statistics Honors Program. As it is right now, this is a rough draft with 3 out of 5 required completed projects.
 
 A section that collects the Projects.  The About page should be a narrative of the content of the ePorfolio and of its scope. As students prepare the ePorfolio, they should identify an audience (e.g. academia, industry) and they should tailor the ePorfolio to that audience. ePorfolios should be created using Github.
 
