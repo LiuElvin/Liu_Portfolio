@@ -5,7 +5,13 @@ Welcome! The assortment of projects below are part of my ePortfolio for the Stat
 Ideally, the finished product will end up with 5 (or more projects), most of them applied.
 
 # [Project 1: Ad hoc Network](https://github.com/LiuElvin/302_Final_Project)
-* Something
+1. Randomly generates $n$ nodes for an ad hoc network according to some pre-specified node density (generally determined by the geographical information).
+
+2. Finds the smallest $R_c$ such that the nodes are connected through paths in the network.
+
+3. Repeats several times for each $n$.
+
+4. Study the distribution of $R_c$.
 
 # [Project 2: Classify High-Dimensional Data]()
 In machine learning, classification is a task that assigns a class label to examples from the problem domain. However, high dimensionality poses significant statistical challenges and renders many traditional classification algorithms impractical to use.
