@@ -4,8 +4,6 @@ Welcome! The assortment of projects below are part of my ePortfolio for the Stat
 
 Ideally, the finished product will end up with 5 (or more projects), most of them applied.
 
-* In addition to any final products (e.g., reports), each project included in the ePortfolio should contain code, and it should be accompanied by a narrative that provides the context of the project, the learning outcomes and the student’s individual contribution. 
-
 # [Project 1: Ad hoc Network](https://github.com/LiuElvin/302_Final_Project)
 * Something
 
@@ -19,15 +17,15 @@ If time permits, students will implement PDA to analyze a real-life dataset of t
 # [Project 3: eBay 2023 University Machine Learning Competition]()
 * Something
 
-# [Project 4: Confidence Intervals on Asymmetric Distributions]()
+# Project 4: Confidence Intervals on Asymmetric Distributions
 * Tentative details:
 * Undergraduate research with Ranjini on Confidence Intervals
 
-# [Project 5: SPA DRP]()
+# Project 5: SPA DRP
 * Tentative details:
 * Another credit of SPA DRP on an applicational use of Statistics
 
-# (Additional Plans)
+# (Additional Tentative Plans)
 * DataFest 2025
 * Winter STAT 498 Special Topics Project w/ Wadsworth
 * Tango Dancing Project or Survey Project w/ Prof. Emanuela Furfaro
