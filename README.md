@@ -22,7 +22,7 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 
 # [Project 3: eBay 2023 University Machine Learning Competition](https://github.com/LiuElvin/ebay_comp)
 * Built a model that can accurately extract and label the named entities in the dataset of item titles on eBay.
-* Our team jookisthebest placed 12th out of 887 teams.
+* Our team `jookisthebest` placed 12th out of 887 teams.
 * The model trains a token classification model using Hugging Face's Transformers library. Here's a more in-depth summary of what the code does:
   1. Hugging Face's transformers library loads a pre-trained token classification model, Facebook's roBERTa.
 
