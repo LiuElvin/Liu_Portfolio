@@ -14,7 +14,7 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 4. Included graphical analysis of the distribution of $R_c$. Produces some plots for networks corresponding to minimum, mean, median, and maximum values of $R_c$ to verify the helper methods successfully created the sparsest path.
 
 <p align="center">
-<image src="./img/ad_hoc_con.png" width="95%"/>
+<image src="./img/ad_hoc_con.png" width="80%"/>
 </p>
 
 # [Project 2: Classify High-Dimensional Data](https://github.com/LiuElvin/class_high_dim)
