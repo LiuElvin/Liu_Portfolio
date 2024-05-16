@@ -1,3 +1,6 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 # About Page - Elvin Liu's ePortfolio
 
 Welcome! The assortment of projects below are part of my ePortfolio for the Statistics Honors Program. As of right now, this is merely a draft with 3 completed projects. Some plans for the last 2 projects are listed at the bottom.
@@ -7,7 +10,7 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 # [Project 1: Ad hoc Network](https://github.com/LiuElvin/302_Final_Project)
 1. Through R, randomly generates $n$ nodes for an ad hoc network according to some pre-specified node density (generally determined by the geographical information).
 
-2. Finds the smallest $R_c$ such that the nodes are connected through paths in the network.
+2. Finds the smallest \( R_c \) such that the nodes are connected through paths in the network.
 
 3. Repeats several times for each $n$.
 
