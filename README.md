@@ -26,9 +26,9 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 *  Our team `jookisthebest` placed 12th out of 887 teams.
 
 *  The model trains a token classification model using Hugging Face's Transformers library. Here's a more in-depth summary of what the code does:
-  * Hugging Face's transformers library loads a pre-trained token classification model, Facebook's roBERTa.
-  * The model is trained in a training loop using PyTorch, the torch library used for neural network operations.
-  * Experiment logging is performed using weights & biases with Wandb.
+   * Hugging Face's transformers library loads a pre-trained token classification model, Facebook's roBERTa.
+   * The model is trained in a training loop using PyTorch, the torch library used for neural network operations.
+   * Experiment logging is performed using weights & biases with Wandb.
 
 # Project 4: Confidence Intervals on Asymmetric Distributions
 * Tentative details:
