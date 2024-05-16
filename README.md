@@ -21,14 +21,14 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 - Afterwards, I implemented PDA to analyze a real-life colon cancer dataset alongside a simple toy example with large dimension count but small sample size.
 
 # [Project 3: eBay 2023 University Machine Learning Competition](https://github.com/LiuElvin/ebay_comp)
-1. Built a model that can accurately extract and label the named entities in the dataset of item titles on eBay.
-2. Our team `jookisthebest` placed 12th out of 887 teams.
-3. The model trains a token classification model using Hugging Face's Transformers library. Here's a more in-depth summary of what the code does:
- * Hugging Face's transformers library loads a pre-trained token classification model, Facebook's roBERTa.
+* Built a model that can accurately extract and label the named entities in the dataset of item titles on eBay.
 
- * The model is trained in a training loop using PyTorch, the torch library used for neural network operations.
+*  Our team `jookisthebest` placed 12th out of 887 teams.
 
- * Experiment logging is performed using weights & biases with Wandb.
+*  The model trains a token classification model using Hugging Face's Transformers library. Here's a more in-depth summary of what the code does:
+  * Hugging Face's transformers library loads a pre-trained token classification model, Facebook's roBERTa.
+  * The model is trained in a training loop using PyTorch, the torch library used for neural network operations.
+  * Experiment logging is performed using weights & biases with Wandb.
 
 # Project 4: Confidence Intervals on Asymmetric Distributions
 * Tentative details:
