@@ -20,7 +20,7 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 
 - Afterwards, I implemented PDA to analyze a real-life colon cancer dataset alongside a simple toy example with large dimension count but small sample size.
 
-# [Project 3: eBay 2023 University Machine Learning Competition]()
+# [Project 3: eBay 2023 University Machine Learning Competition](https://github.com/LiuElvin/ebay_comp)
 * Something
 
 # Project 4: Confidence Intervals on Asymmetric Distributions
