@@ -24,7 +24,7 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 
 - Afterwards, I implemented PDA to analyze a real-life colon cancer dataset alongside a simple toy example with large dimension count but small sample size.
 
-<p float="left">
+<p align="middle">
   <img src="./img/right.png" width="400"/>
   <img src="./img/left.png" width="400"/>
 </p>
