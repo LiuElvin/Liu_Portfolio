@@ -14,7 +14,7 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 4. Included graphical analysis of the distribution of $R_c$. Produces some plots for networks corresponding to minimum, mean, median, and maximum values of $R_c$ to verify the helper methods successfully created the sparsest path.
 
 <p align="center">
-<image src="./img/ad_hoc_con" width="900"/>
+<image src="./img/ad_hoc_con.png" width="800"/>
 </p>
 
 # [Project 2: Classify High-Dimensional Data](https://github.com/LiuElvin/class_high_dim)
@@ -25,8 +25,8 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 - Afterwards, I implemented PDA to analyze a real-life colon cancer dataset alongside a simple toy example with large dimension count but small sample size.
 
 <p float="left">
-  <img src="./img/right.png" width="500"/>
-  <img src="./img/left.png" width="500"/>
+  <img src="./img/right.png" width="400"/>
+  <img src="./img/left.png" width="400"/>
 </p>
 
 # [Project 3: eBay 2023 University Machine Learning Competition](https://github.com/LiuElvin/ebay_comp)
@@ -40,7 +40,7 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
    * Experiment logging is performed using weights & biases with Wandb.
 
 <p align="center">
-<img src="./img/ebay.png" width="900"/>
+<img src="./img/ebay.png" width="800"/>
 </p>
 
 # Project 4: Confidence Intervals on Asymmetric Distributions
