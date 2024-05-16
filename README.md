@@ -24,7 +24,7 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 * Built a model that can accurately extract and label the named entities in the dataset of item titles on eBay.
 * Our team jookisthebest placed 12th out of 887 teams.
 * The model trains a token classification model using Hugging Face's Transformers library. Here's a more in-depth summary of what the code does:
-  1. Hugging Face's transformers library loads a pre-trained token classification model, roBERTa.
+  1. Hugging Face's transformers library loads a pre-trained token classification model, Facebook's roBERTa.
 
   2. The model is trained in a training loop using PyTorch, the torch library used for neural network operations.
 
