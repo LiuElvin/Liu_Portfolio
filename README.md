@@ -1,4 +1,4 @@
-# About Page - Elvin Liu's ePortfolio
+# Elvin Liu's ePortfolio
 
 Welcome! The assortment of projects below are part of my ePortfolio for the Statistics Honors Program. As of right now, this is merely a draft with 3 completed projects. Some plans for the last 2 projects are listed at the bottom.
 
