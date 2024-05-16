@@ -11,7 +11,7 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 
 3. Repeats several times for each $n$.
 
-4. Study the distribution of $R_c$. Produce some plots for networks corresponding to minimum, mean, median, and maximum values of $R_c$ to verify the methods.
+4. Included graphical analysis of the distribution of $R_c$. Produces some plots for networks corresponding to minimum, mean, median, and maximum values of $R_c$ to verify the helper methods successfully created the sparsest path.
 
 # [Project 2: Classify High-Dimensional Data]()
 In machine learning, classification is a task that assigns a class label to examples from the problem domain. However, high dimensionality poses significant statistical challenges and renders many traditional classification algorithms impractical to use.
