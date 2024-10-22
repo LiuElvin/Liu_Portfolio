@@ -45,15 +45,13 @@ Ideally, the finished product will end up with 5 (or more projects), most of the
 <img src="./img/ebay.png" width="75%"/>
 </p>
 
-# Project 4: Confidence Intervals on Asymmetric Distributions
+# Project 4: Pedagogies
+
+# Project 5: Confidence Intervals on Asymmetric Distributions
 * Tentative details:
 * Undergraduate research with Ranjini on Confidence Intervals
 
-# Project 5: SPA DRP
-* Tentative details:
-* Another credit of SPA DRP on an applicational use of Statistics
-
 # (Additional Tentative Plans)
+* SPA DRP
 * DataFest 2025
 * Winter STAT 498 Special Topics Project w/ Wadsworth
-* Tango Dancing Project or Survey Project w/ Prof. Emanuela Furfaro
