@@ -25,8 +25,8 @@ Extracted entities, also called aspects, consist of the aspect name (“Brand na
 
 To evaluate each team, submitted models were run on the test dataset - the team with the highest weighted f1-score (best predictions) on the test dataset came out victorious (the quiz dataset was used for leaderboard scoring). Details about the weighted f1-score and its components are explained in further detail below.
 
-<p float="center">
-  <img src="./img1/f1.png" width="80%"/>
+<p align="center">
+  <img src="./img1/f1.png" width="60%"/>
 </p>
 
 Ultimately, our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants.
@@ -76,8 +76,8 @@ The 10,000 labeled item titles will be split into three groups:
 3. Test set (2,500 records)
  
 <p float="center">
-  <img src="./img1/dataset_raw.png" width="50%"/>
-  <img src="./img1/dataset_translated.png" width="50%"/>
+  <img src="./img1/dataset_raw.png" width="45%"/>
+  <img src="./img1/dataset_translated.png" width="45%"/>
 </p>
 
 20 unlabeled item titles from eBay Germany are pictured above.
@@ -137,15 +137,15 @@ Our project involves training a token classification model using Hugging Face's 
 This setup allowed us to efficiently train and evaluate the model while maintaining detailed performance logs for iteration and improvement
 
 <p float="center">
-  <img src="./img1/successful_run.png" width="50%"/>
-  <img src="./img1/failed_run.png" width="50%"/>
+  <img src="./img1/successful_run.png" width="45%"/>
+  <img src="./img1/failed_run.png" width="45%"/>
 </p>
 
 Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on Google Colab.
 
 Below is a Wandb performance graph for step size.
 
-<p float="center">
+<p align="center">
   <img src="./img1/wandb_eval.png" width="60%"/>
 </p>
 
