@@ -13,9 +13,9 @@ In the summer of my freshman year, my friend, [James Ngai](https://www.linkedin.
   <img src="./img1/jook.png" width="41.75%"/>
 </p>
 
-The competition asked us to build a machine learning model that could accurately extract and label the named entities in the dataset of item titles on eBay's German site. In other words, we needed to use data to solve a real-world e-commerce challenge.
+The competition asked us to build a machine learning model that could accurately extract and label the named entities in the dataset of item titles on eBay's German site.
 
-While named entity recognition, or NER, is applied in many different settings, for this challenge, we will only be using eBay listing titles for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data contained German language listing titles).
+While NER (**N**amed **E**ntity **R**ecognition) is applied in many different settings, for this challenge, we were only using eBay listing titles for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data used German language listing titles).
 
 <p align="center">
   <img src="./img1/instructions.png" width="90%"/>
@@ -23,7 +23,7 @@ While named entity recognition, or NER, is applied in many different settings, f
 
 Extracted entities, also called aspects, consist of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above). The objective of this challenge was to extract and label the aspects in the dataset of item titles listed on eBay. Not all titles have all aspects, and figuring out which aspect is present for a given title was a significant part of the challenge.
 
-The team with the highest weighted f1-score on the test dataset won. The weighted f1-score and its components are explained in further detail in the image below.
+To evaluate each team, submitted models were run on the test dataset - the team with the highest weighted f1-score (best predictions) on the test dataset came out victorious (the quiz dataset was used for leaderboard scoring). Details about the weighted f1-score and its components are explained in further detail below.
 
 <p float="center">
   <img src="./img1/f1.png" width="90%"/>
@@ -59,69 +59,77 @@ Named Entity Recognition (NER) is the machine learning process of automatic labe
 
 At eBay, NER is applied in a variety of applications, in particular for extracting aspects from listings (seller-facing context), and from search queries (buyer-facing context). In both of these contexts NER plays a crucial role to bridge unstructured text data to structured data. This challenge focuses on extraction from listings.
 
-## Data Set
+## Dataset
 
-The data set consists of 10 million randomly selected unlabeled item titles from eBay Germany, all of which are from “Athletic Shoes” categories.
+The dataset consists of 10 million randomly selected unlabeled item titles from eBay Germany, all of which are from “Athletic Shoes” categories.
 
 - Among these item titles there are 10,000 labeled item titles
 
-- We were also provided the set of aspect names that should be extracted from each item title
+- The set of aspect names that should be extracted from each item title is also provided
 
 - Each item title contains a unique identifier (a record number)
- 
-<p float="center">
-  <img src="./img1/dataset_raw.png" width="45%"/>
-  <img src="./img1/dataset_translated.png" width="45%"/>
-</p>
-
-The above image depicts 20 example unlabeled item titles from eBay Germany.
-
-- The left is the raw data, while the right is the model's predicted labels
 
 The 10,000 labeled item titles will be split into three groups:
 
 1. Training set (5,000 records)
 2. Quiz set (2,500 records)
 3. Test set (2,500 records)
+ 
+<p float="center">
+  <img src="./img1/dataset_raw.png" width="45%"/>
+  <img src="./img1/dataset_translated.png" width="45%"/>
+</p>
+
+20 unlabeled item titles from eBay Germany are pictured above.
+
+- The lefthand side depicts raw data
+
+- The righthand side depicts a model's predicted labels
 
 ## The Model
+
+Our project involves training a token classification model using Hugging Face's transformers library and other key tools. Below is a structured outline of the approach:
+
+*Model Components -*
+
+1. Tokenizing German eBay Listings
+- Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings effectively
+- Pre-processed symbols to manually remove untranslatable text
+
+2. Performance Tracking and Storage
+- Set up Hugging Face and Wandb integrations to store and track model performance for easy evaluation of past experiments
+
+*Workflow -*
+1. Dataset Handling
+- Used the datasets library from Hugging Face to load, manage, and preprocess the dataset directly in Google Colab
+
+2. Loading Pre-trained Token Classification Model
+- Loaded a pre-trained model using the transformers library for token classification tasks
+- Tokenized the dataset with the AutoTokenizer class
+
+3. Model Training
+- Trained the model using PyTorch, employing:
+  - Custom optimization with the AdamW optimizer
+  - Learning rate schedulers for better convergence
+- Training progress and metrics were logged in Wandb
+
+4. Performance Metrics
+- Computed evaluation metrics such as precision, recall, f1-score, and accuracy during training and at the end of each epoch
+- Used the seqeval library to calculate token-level performance metrics
+
+5. Data Preparation
+- Loaded and processed training and evaluation datasets using PyTorch’s DataLoader class
+
+This setup allowed us to efficiently train and evaluate the model while maintaining detailed performance logs for iteration and improvement
 
 <p float="center">
   <img src="./img1/successful_run.png" width="45%"/>
   <img src="./img1/failed_run.png" width="45%"/>
 </p>
 
-Above are 2 runs (1 successful and 1 failed) of our models on Google Colab.
+Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on Google Colab.
 
-In our model, we
-
-- Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings.
-
-- Included pre-processing of certain symbols to manually remove untranslatable text.
-
-- Setup Hugging Face and Wandb folders to store and freely assess performances of previous models.
-
-The model trains a token classification model using Hugging Face's transformers library. More specifically...
-
-1. We utilize the datasets library to load and handle the dataset into Google Colab.
- 
-2. Hugging Face's transformers library is then necessary to load a pre-trained token classification model.
- 
-3. The AutoTokenizer class from the transformers library is employed to tokenize the dataset.
- 
-4. The model is trained via PyTorch.
- 
-  - We use the neural network operations.
-
-  - We implement a training loop with custom optimization strategies from the AdamW optimizer and learning rate schedulers.
- 
-  - Training progress is logged via Wandb.
- 
-5. Model performance metrics like precision, recall, f1-score, and accuracy are computing during training and evaluation of epochs.
-
-  - Evaluation metrics are computed with the seqeval library.
-    
-6. Training and evaluation data is then loaded and processed via PyTorch's DataLoader.
+Below is a Wandb performance graph for step size.
 
 <p float="center">
   <img src="./img1/wandb_eval.png" width="25%"/>
@@ -142,6 +150,7 @@ The model trains a token classification model using Hugging Face's transformers 
 - I tested the hyperparameters (epochs, learning rate, etc.) for our machine learning models, tweaking values based off the trends shown by the Wandb performance graphs
 
 - Facebook A.I.'s RoBERTa multilingual model provided both token classification and translation for our final submission
+
   - A link to the model can be found [here](https://huggingface.co/FacebookAI/xlm-roberta-large-finetuned-conll03-english)
 
 ## Learning Outcomes
