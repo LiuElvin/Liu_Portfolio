@@ -49,7 +49,7 @@ Files for my [Project 1 repository](https://github.com/LiuElvin/eBay_ML_Challeng
 
 - [`./models`](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main/models) includes code for the XLM-RoBERTa model.
 
-*Note:* Most of the `Python` coding for this project was conducted on Google Colab. The model provided in the [models](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main/models) folder represents just one of the many machine learning models developed during the competition. Due to the need to redact sensitive information, such as password keys, before uploading the code to GitHub, I have only included example code for the XLM-RoBERTa model. This model serves as a representative example of our later submissions, as the code structure had become fairly streamlined by the end of the competition.
+*Note:* Most of the `Python` coding for this project was conducted on Google Colab. The model provided in the [`./models`](https://github.com/LiuElvin/eBay_ML_Challenge/tree/main/models) folder represents just one of the many machine learning models developed during the competition. Due to the need to redact sensitive information, such as password keys, before uploading the code to GitHub, I have only included example code for the XLM-RoBERTa model. This model serves as a representative example of our later submissions, as the code structure had become fairly streamlined by the end of the competition.
 
 ## Background
 
@@ -93,31 +93,45 @@ Our project involves training a token classification model using Hugging Face's 
 **Components -**
 
 1. Tokenizing German eBay Listings
+
 - Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings effectively
+
 - Pre-processed symbols to manually remove untranslatable text
 
 2. Performance Tracking and Storage
+
 - Set up Hugging Face and Wandb integrations to store and track model performance for easy evaluation of past experiments
 
 **Workflow -**
+
 1. Dataset Handling
+
 - Used the datasets library from Hugging Face to load, manage, and preprocess the dataset directly in Google Colab
 
 2. Loading Pre-trained Token Classification Model
+
 - Loaded a pre-trained model using the transformers library for token classification tasks
+
 - Tokenized the dataset with the AutoTokenizer class
 
 3. Model Training
+
 - Trained the model using PyTorch, employing:
+
   - Custom optimization with the AdamW optimizer
+  
   - Learning rate schedulers for better convergence
+  
 - Training progress and metrics were logged in Wandb
 
 4. Performance Metrics
+
 - Computed evaluation metrics such as precision, recall, f1-score, and accuracy during training and at the end of each epoch
+
 - Used the seqeval library to calculate token-level performance metrics
 
 5. Data Preparation
+
 - Loaded and processed training and evaluation datasets using PyTorch’s DataLoader class
 
 This setup allowed us to efficiently train and evaluate the model while maintaining detailed performance logs for iteration and improvement
