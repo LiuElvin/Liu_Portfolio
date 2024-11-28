@@ -26,7 +26,7 @@ Extracted entities, also called aspects, consist of the aspect name (“Brand na
 To evaluate each team, submitted models were run on the test dataset - the team with the highest weighted f1-score (best predictions) on the test dataset came out victorious (the quiz dataset was used for leaderboard scoring). Details about the weighted f1-score and its components are explained in further detail below.
 
 <p float="center">
-  <img src="./img1/f1.png" width="90%"/>
+  <img src="./img1/f1.png" width="80%"/>
 </p>
 
 Ultimately, our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants.
@@ -76,8 +76,8 @@ The 10,000 labeled item titles will be split into three groups:
 3. Test set (2,500 records)
  
 <p float="center">
-  <img src="./img1/dataset_raw.png" width="45%"/>
-  <img src="./img1/dataset_translated.png" width="45%"/>
+  <img src="./img1/dataset_raw.png" width="50%"/>
+  <img src="./img1/dataset_translated.png" width="50%"/>
 </p>
 
 20 unlabeled item titles from eBay Germany are pictured above.
@@ -92,29 +92,29 @@ Our project involves training a token classification model using Hugging Face's 
 
 ### Components -
 
-1. Tokenizing German eBay Listings
+**1. Tokenizing German eBay Listings**
 
 - Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings effectively
 
 - Pre-processed symbols to manually remove untranslatable text
 
-2. Performance Tracking and Storage
+**2. Performance Tracking and Storage**
 
 - Set up Hugging Face and Wandb integrations to store and track model performance for easy evaluation of past experiments
 
 ### Workflow -
 
-1. Dataset Handling
+**1. Dataset Handling**
 
 - Used the datasets library from Hugging Face to load, manage, and preprocess the dataset directly in Google Colab
 
-2. Loading Pre-trained Token Classification Model
+**2. Loading Pre-trained Token Classification Model**
 
 - Loaded a pre-trained model using the transformers library for token classification tasks
 
 - Tokenized the dataset with the AutoTokenizer class
 
-3. Model Training
+**3. Model Training**
 
 - Trained the model using PyTorch, employing:
 
@@ -124,21 +124,21 @@ Our project involves training a token classification model using Hugging Face's 
   
 - Training progress and metrics were logged in Wandb
 
-4. Performance Metrics
+**4. Performance Metrics**
 
 - Computed evaluation metrics such as precision, recall, f1-score, and accuracy during training and at the end of each epoch
 
 - Used the seqeval library to calculate token-level performance metrics
 
-5. Data Preparation
+**5. Data Preparation**
 
 - Loaded and processed training and evaluation datasets using PyTorch’s DataLoader class
 
 This setup allowed us to efficiently train and evaluate the model while maintaining detailed performance logs for iteration and improvement
 
 <p float="center">
-  <img src="./img1/successful_run.png" width="45%"/>
-  <img src="./img1/failed_run.png" width="45%"/>
+  <img src="./img1/successful_run.png" width="50%"/>
+  <img src="./img1/failed_run.png" width="50%"/>
 </p>
 
 Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on Google Colab.
@@ -146,7 +146,7 @@ Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on G
 Below is a Wandb performance graph for step size.
 
 <p float="center">
-  <img src="./img1/wandb_eval.png" width="40%"/>
+  <img src="./img1/wandb_eval.png" width="60%"/>
 </p>
 
 ---
