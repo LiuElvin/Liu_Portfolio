@@ -90,7 +90,7 @@ ggplot(data_df, aes(x = V1, fill = factor(ifelse(V1 >= 0, "Class 1", "Class 2"))
 ```
 
 <p align="center">
-<img src="./img2/dummy_1.png" width="90%" />
+  <img src="./img2/dummy_1.png" width="90%" />
 </p>
 
 The histogram above graphs the counts of the first column from each class.
@@ -137,7 +137,7 @@ title("PDA, Lambda = 0.1")
 # etc. for PDA lambda = 0.5 and 0.9
 ```
 
-<p float="center">
+<p align="center">
   <img src="./img2/dummy_2.png" width="45%" />
   <img src="./img2/dummy_3.png" width="45%" /> 
 </p>
@@ -167,7 +167,7 @@ ggplot(LDA_coefficient, aes(x = variable, y = V1)) +
   scale_y_continuous(limits = c(0, 1))
 ```
 
-<p float="center">
+<p align="center">
   <img src="./img2/dummy_4.png" width="45%" />
   <img src="./img2/dummy_5.png" width="45%" /> 
 </p>
@@ -194,7 +194,7 @@ To test the classification performances of LDA and PDA, let's split training and
 
 - The two-dimension PDA ($\lambda = 0.5$) projection of the testing data is on the right
 
-<p float="center">
+<p align="center">
   <img src="./img2/cancer_1.png" width="45%" />
   <img src="./img2/cancer_2.png" width="45%" /> 
 </p>
@@ -210,7 +210,7 @@ To check if these classification results are good or not, we can compare the per
 Utilizing the `R` package `e1071`, we can call the `svm()` function to apply a support vector machine and return a confusion matrix of the results.
 
 <p align="center">
-<img src="./img2/confusion.png" width="50%" />
+  <img src="./img2/confusion.png" width="50%" />
 </p>
 
 $$\text{Accuracy (for SVM)} = \frac{TP + TN}{TP + TN + FP + FN} = \frac{6 + 2}{6 + 2 + 3 + 0} = 0.7273$$
@@ -224,7 +224,7 @@ PDA appears to be a fairly decent method for this example, although not perfect.
 Belows graph compares the importance of PDA's ten most important columns and the importance of those same ten columns for LDA:
 
 <p align="center">
-<img src="./img2/weight_2.png" width="90%" />
+  <img src="./img2/weight_2.png" width="90%" />
 </p>
 
 *Note*
@@ -238,7 +238,7 @@ Belows graph compares the importance of PDA's ten most important columns and the
 Belows graph compares the importance of LDA's ten most important columns and the importance of those same ten columns for PDA:
 
 <p align="center">
-<img src="./img2/weight_1.png" width="90%" />
+  <img src="./img2/weight_1.png" width="90%" />
 </p>
 
 *Note*
@@ -256,7 +256,7 @@ The following is a **very** incomplete comparison between the t-test and PDA mod
 Nearing the end of the project, I prioritized my presentation over this portion. However, I've left a graphical comparison for those interested.
 
 <p align="center">
-<img src="./img2/weight_3.png" width="90%" />
+  <img src="./img2/weight_3.png" width="90%" />
 </p>
 
 ---

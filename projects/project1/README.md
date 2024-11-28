@@ -8,7 +8,7 @@
 
 In the summer of my freshman year, my friend, [James Ngai](https://www.linkedin.com/in/ngai-james), and I competed under the team name **jookisthebest** at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset. The competition primarily targets master's and PhD students, however undergraduate students were also encouraged to participate (as long as we had a team of 1 to 5 people).
 
-<p float="center">
+<p align="center">
   <img src="./img1/pfp.png" width="48.25%"/>
   <img src="./img1/jook.png" width="41.75%"/>
 </p>
@@ -18,15 +18,15 @@ The competition asked us to build a machine learning model that could accurately
 While NER (**N**amed **E**ntity **R**ecognition) is applied in many different settings, for this challenge, we were only using eBay listing titles for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data used German language listing titles).
 
 <p align="center">
-  <img src="./img1/instructions.png" width="90%"/>
+  <img src="./img1/instructions.png" width="60%"/>
 </p>
 
 Extracted entities, also called aspects, consist of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above). The objective of this challenge was to extract and label the aspects in the dataset of item titles listed on eBay. Not all titles have all aspects, and figuring out which aspect is present for a given title was a significant part of the challenge.
 
 To evaluate each team, submitted models were run on the test dataset - the team with the highest weighted f1-score (best predictions) on the test dataset came out victorious (the quiz dataset was used for leaderboard scoring). Details about the weighted f1-score and its components are explained in further detail below.
 
-<p float="center">
-  <img src="./img1/f1.png" width="80%"/>
+<p align="center">
+  <img src="./img1/f1.png" width="90%"/>
 </p>
 
 Ultimately, our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants.
@@ -75,16 +75,19 @@ The 10,000 labeled item titles will be split into three groups:
 2. Quiz set (2,500 records)
 3. Test set (2,500 records)
  
-<p float="center">
-  <img src="./img1/dataset_raw.png" width="50%"/>
-  <img src="./img1/dataset_translated.png" width="50%"/>
+<p align="center">
+  <img src="./img1/dataset_raw.png" width="90%"/>
+</p>
+
+<p align="center">
+  <img src="./img1/dataset_translated.png" width="90%"/>
 </p>
 
 20 unlabeled item titles from eBay Germany are pictured above.
 
-- The lefthand side depicts raw data
+- The top image depicts raw data
 
-- The righthand side depicts a model's predicted labels
+- The bottom image depicts a model's predicted labels
 
 ## The Model
 
@@ -136,17 +139,20 @@ Our project involves training a token classification model using Hugging Face's 
 
 This setup allowed us to efficiently train and evaluate the model while maintaining detailed performance logs for iteration and improvement
 
-<p float="center">
-  <img src="./img1/successful_run.png" width="50%"/>
-  <img src="./img1/failed_run.png" width="50%"/>
+<p align="center">
+  <img src="./img1/successful_run.png" width="90%"/>
+</p>
+
+<p align="center">
+  <img src="./img1/failed_run.png" width="90%"/>
 </p>
 
 Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on Google Colab.
 
 Below is a Wandb performance graph for step size.
 
-<p float="center">
-  <img src="./img1/wandb_eval.png" width="60%"/>
+<p align="center">
+  <img src="./img1/wandb_eval.png" width="40%"/>
 </p>
 
 ---
