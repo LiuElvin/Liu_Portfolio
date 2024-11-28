@@ -8,7 +8,7 @@
 
 In the summer of my freshman year, my friend, [James Ngai](https://www.linkedin.com/in/ngai-james), and I competed under the team name **jookisthebest** at eBay's 5th Annual University Challenge in the space of Machine Learning on an e-commerce dataset. The competition primarily targets master's and PhD students, however undergraduate students were also encouraged to participate (as long as we had a team of 1 to 5 people).
 
-<p float="center">
+<p align="center">
   <img src="./img1/pfp.png" width="48.25%"/>
   <img src="./img1/jook.png" width="41.75%"/>
 </p>
@@ -75,16 +75,19 @@ The 10,000 labeled item titles will be split into three groups:
 2. Quiz set (2,500 records)
 3. Test set (2,500 records)
  
-<p float="center">
-  <img src="./img1/dataset_raw.png" width="45%"/>
-  <img src="./img1/dataset_translated.png" width="45%"/>
+<p align="center">
+  <img src="./img1/dataset_raw.png" width="90%"/>
+</p>
+
+<p align="center">
+  <img src="./img1/dataset_translated.png" width="90%"/>
 </p>
 
 20 unlabeled item titles from eBay Germany are pictured above.
 
-- The lefthand side depicts raw data
+- The top image depicts raw data
 
-- The righthand side depicts a model's predicted labels
+- The bottom image depicts a model's predicted labels
 
 ## The Model
 
@@ -136,9 +139,12 @@ Our project involves training a token classification model using Hugging Face's 
 
 This setup allowed us to efficiently train and evaluate the model while maintaining detailed performance logs for iteration and improvement
 
-<p float="center">
-  <img src="./img1/successful_run.png" width="45%"/>
-  <img src="./img1/failed_run.png" width="45%"/>
+<p align="center">
+  <img src="./img1/successful_run.png" width="90%"/>
+</p>
+
+<p align="center">
+  <img src="./img1/failed_run.png" width="90%"/>
 </p>
 
 Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on Google Colab.
