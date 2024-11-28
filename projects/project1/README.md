@@ -132,7 +132,7 @@ Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on G
 Below is a Wandb performance graph for step size.
 
 <p float="center">
-  <img src="./img1/wandb_eval.png" width="25%"/>
+  <img src="./img1/wandb_eval.png" width="40%"/>
 </p>
 
 ---
