@@ -18,7 +18,7 @@ The competition asked us to build a machine learning model that could accurately
 While NER (**N**amed **E**ntity **R**ecognition) is applied in many different settings, for this challenge, we were only using eBay listing titles for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data used German language listing titles).
 
 <p align="center">
-  <img src="./img1/instructions.png" width="90%"/>
+  <img src="./img1/instructions.png" width="60%"/>
 </p>
 
 Extracted entities, also called aspects, consist of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above). The objective of this challenge was to extract and label the aspects in the dataset of item titles listed on eBay. Not all titles have all aspects, and figuring out which aspect is present for a given title was a significant part of the challenge.
@@ -26,7 +26,7 @@ Extracted entities, also called aspects, consist of the aspect name (“Brand na
 To evaluate each team, submitted models were run on the test dataset - the team with the highest weighted f1-score (best predictions) on the test dataset came out victorious (the quiz dataset was used for leaderboard scoring). Details about the weighted f1-score and its components are explained in further detail below.
 
 <p align="center">
-  <img src="./img1/f1.png" width="60%"/>
+  <img src="./img1/f1.png" width="90%"/>
 </p>
 
 Ultimately, our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants.
