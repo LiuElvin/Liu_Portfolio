@@ -90,7 +90,7 @@ The 10,000 labeled item titles will be split into three groups:
 
 Our project involves training a token classification model using Hugging Face's transformers library and other key tools. Below is a structured outline of the approach:
 
-*Model Components -*
+**Components -**
 
 1. Tokenizing German eBay Listings
 - Incorporated Facebook A.I.'s RoBERTa model to tokenize German eBay listings effectively
@@ -99,7 +99,7 @@ Our project involves training a token classification model using Hugging Face's 
 2. Performance Tracking and Storage
 - Set up Hugging Face and Wandb integrations to store and track model performance for easy evaluation of past experiments
 
-*Workflow -*
+**Workflow -**
 1. Dataset Handling
 - Used the datasets library from Hugging Face to load, manage, and preprocess the dataset directly in Google Colab
 
