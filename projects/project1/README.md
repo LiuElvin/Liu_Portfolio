@@ -15,15 +15,7 @@ In the summer of my freshman year, my friend, [James Ngai](https://www.linkedin.
 
 The competition asked us to build a machine learning model that could accurately extract and label the named entities in the dataset of item titles on eBay's German site.
 
-While NER (**N**amed **E**ntity **R**ecognition) is applied in many different settings, for this challenge, we were only using eBay listing titles for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data used German language listing titles).
-
-<p align="center">
-  <img src="./img1/instructions.png" width="60%"/>
-</p>
-
-Extracted entities, also called aspects, consist of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above). The objective of this challenge was to extract and label the aspects in the dataset of item titles listed on eBay. Not all titles have all aspects, and figuring out which aspect is present for a given title was a significant part of the challenge.
-
-To evaluate each team, submitted models were run on the test dataset - the team with the highest weighted f1-score (best predictions) on the test dataset came out victorious (the quiz dataset was used for leaderboard scoring). Details about the weighted f1-score and its components are explained in further detail below.
+Each team's submitted models were evaluated using the test dataset, with the team achieving the highest weighted f1-score (indicating the best predictions) on this dataset declared the winner. The quiz dataset was used for leaderboard scoring. Further details about the weighted f1-score are provided below.
 
 <p align="center">
   <img src="./img1/f1.png" width="90%"/>
@@ -32,7 +24,7 @@ To evaluate each team, submitted models were run on the test dataset - the team 
 Ultimately, our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants.
 
 <p align="center">
-  <img src="./img1/rankings.png" width="90%"/>
+  <img src="./img1/rankings.png" width="60%"/>
 </p>
 
 ---
@@ -55,9 +47,15 @@ Files for my [Project 1 repository](https://github.com/LiuElvin/eBay_ML_Challeng
 
 Named Entities are the semantic strings / words / phrases that refer to people, brands, organizations, locations, styles, materials, patterns, product names, units of measure, clothing sizes, etc.
 
-Named Entity Recognition (NER) is the machine learning process of automatic labeling and extracting important named entities in a text that carry a particular meaning. In e-commerce, NER is used to process listing or product titles and descriptions, queries, and reviews, or wherever extraction of important data from raw text is desired.
+Named Entity Recognition (NER) is the machine learning process of automatic labeling and extracting important named entities in a text that carry a particular meaning. In e-commerce, NER is used to process listing or product titles and descriptions, queries, and reviews, or wherever extraction of important data from raw text is desired. At eBay, NER is applied in a variety of applications, in particular for extracting aspects from listings (seller-facing context), and from search queries (buyer-facing context). In both of these contexts NER plays a crucial role to bridge unstructured text data to structured data.
 
-At eBay, NER is applied in a variety of applications, in particular for extracting aspects from listings (seller-facing context), and from search queries (buyer-facing context). In both of these contexts NER plays a crucial role to bridge unstructured text data to structured data. This challenge focuses on extraction from listings.
+For this challenge, eBay listing titles are used for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data used German language listing titles).
+
+<p align="center">
+  <img src="./img1/instructions.png" width="50%"/>
+</p>
+
+Extracted entities, also called aspects, consist of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above). The objective of this challenge is to extract and label the aspects in the dataset of item titles listed on eBay. Not all titles have all aspects, and figuring out which aspect is present for a given title is a significant part of the challenge.
 
 ## Dataset
 
@@ -76,16 +74,16 @@ The 10,000 labeled item titles will be split into three groups:
 3. Test set (2,500 records)
  
 <p align="center">
-  <img src="./img1/dataset_raw.png" width="90%"/>
+  <img src="./img1/dataset_raw.png" width="70%"/>
 </p>
 
 <p align="center">
-  <img src="./img1/dataset_translated.png" width="90%"/>
+  <img src="./img1/dataset_translated.png" width="70%"/>
 </p>
 
 20 unlabeled item titles from eBay Germany are pictured above.
 
-- The top image depicts raw data
+- The top image depicts raw quiz data
 
 - The bottom image depicts a model's predicted labels
 
@@ -104,6 +102,13 @@ Our project involves training a token classification model using Hugging Face's 
 **2. Performance Tracking and Storage**
 
 - Set up Hugging Face and Wandb integrations to store and track model performance for easy evaluation of past experiments
+
+<p align="center">
+  <img src="./img1/successful_run.png" width="45%"/>
+  <img src="./img1/failed_run.png" width="45%"/>
+</p>
+
+Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on Google Colab.
 
 ### Workflow -
 
@@ -138,16 +143,6 @@ Our project involves training a token classification model using Hugging Face's 
 - Loaded and processed training and evaluation datasets using PyTorch’s DataLoader class
 
 This setup allowed us to efficiently train and evaluate the model while maintaining detailed performance logs for iteration and improvement
-
-<p align="center">
-  <img src="./img1/successful_run.png" width="90%"/>
-</p>
-
-<p align="center">
-  <img src="./img1/failed_run.png" width="90%"/>
-</p>
-
-Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on Google Colab.
 
 Below is a Wandb performance graph for step size.
 
