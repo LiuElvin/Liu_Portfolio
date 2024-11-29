@@ -24,7 +24,7 @@ Each team's submitted models were evaluated using the test dataset, with the tea
 Ultimately, our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants.
 
 <p align="center">
-  <img src="./img1/rankings.png" width="90%"/>
+  <img src="./img1/rankings.png" width="60%"/>
 </p>
 
 ---
