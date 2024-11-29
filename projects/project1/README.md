@@ -74,11 +74,11 @@ The 10,000 labeled item titles will be split into three groups:
 3. Test set (2,500 records)
  
 <p align="center">
-  <img src="./img1/dataset_raw.png" width="90%"/>
+  <img src="./img1/dataset_raw.png" width="60%"/>
 </p>
 
 <p align="center">
-  <img src="./img1/dataset_translated.png" width="90%"/>
+  <img src="./img1/dataset_translated.png" width="60%"/>
 </p>
 
 20 unlabeled item titles from eBay Germany are pictured above.
@@ -104,11 +104,11 @@ Our project involves training a token classification model using Hugging Face's 
 - Set up Hugging Face and Wandb integrations to store and track model performance for easy evaluation of past experiments
 
 <p align="center">
-  <img src="./img1/successful_run.png" width="90%"/>
+  <img src="./img1/successful_run.png" width="60%"/>
 </p>
 
 <p align="center">
-  <img src="./img1/failed_run.png" width="90%"/>
+  <img src="./img1/failed_run.png" width="60%"/>
 </p>
 
 Above are 2 sample runs (1 successful, 1 unsuccessful) of the training loop on Google Colab.
