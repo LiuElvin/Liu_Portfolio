@@ -49,7 +49,7 @@ Named Entities are the semantic strings / words / phrases that refer to people, 
 
 Named Entity Recognition (NER) is the machine learning process of automatic labeling and extracting important named entities in a text that carry a particular meaning. In e-commerce, NER is used to process listing or product titles and descriptions, queries, and reviews, or wherever extraction of important data from raw text is desired. At eBay, NER is applied in a variety of applications, in particular for extracting aspects from listings (seller-facing context), and from search queries (buyer-facing context). In both of these contexts NER plays a crucial role to bridge unstructured text data to structured data.
 
-While NER is applied in many different settings, for this challenge, eBay listing titles are used for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data used German language listing titles).
+For this challenge, eBay listing titles are used for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data used German language listing titles).
 
 <p align="center">
   <img src="./img1/instructions.png" width="50%"/>
