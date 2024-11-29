@@ -52,7 +52,7 @@ Named Entity Recognition (NER) is the machine learning process of automatic labe
 For this challenge, eBay listing titles are used for NER. A few examples of NER labeling of listing titles are shown below (these examples are in English to illustrate the concept, the challenge data used German language listing titles).
 
 <p align="center">
-  <img src="./img1/instructions.png" width="50%"/>
+  <img src="./img1/instructions.png" width="40%"/>
 </p>
 
 Extracted entities, also called aspects, consist of the aspect name (“Brand name” for the first aspect in the last example above) and the aspect value (“NYX” for the same aspect in the same example above). The objective of this challenge is to extract and label the aspects in the dataset of item titles listed on eBay. Not all titles have all aspects, and figuring out which aspect is present for a given title is a significant part of the challenge.
