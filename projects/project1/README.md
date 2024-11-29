@@ -83,7 +83,7 @@ The 10,000 labeled item titles will be split into three groups:
 
 20 unlabeled item titles from eBay Germany are pictured above.
 
-- The top image depicts raw data
+- The top image depicts raw quiz data
 
 - The bottom image depicts a model's predicted labels
 
