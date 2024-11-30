@@ -15,16 +15,16 @@ In the summer of my freshman year, my friend, [James Ngai](https://www.linkedin.
 
 The competition asked us to build a machine learning model that could accurately extract and label the named entities in the dataset of item titles on eBay's German site.
 
-Each team's submitted models were evaluated using the test dataset, with the team achieving the highest weighted f1-score (indicating the best predictions) on this dataset declared the winner. The quiz dataset was used for leaderboard scoring. Further details about the weighted f1-score are provided below.
+Each team's submitted models were evaluated using the test dataset, with the team achieving the highest weighted f1-score (indicating the best predictions) on this dataset declared the winner. The quiz dataset was used for leaderboard scoring. Further details about the weighted f1-score are provided here:
 
 <p align="center">
   <img src="./img1/f1.png" width="90%"/>
 </p>
 
-Ultimately, our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants.
+Our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants. The final leaderboard results are shown below:
 
 <p align="center">
-  <img src="./img1/rankings.png" width="60%"/>
+  <img src="./img1/rankings.png" width="80%"/>
 </p>
 
 ---
