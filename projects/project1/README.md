@@ -21,7 +21,7 @@ Each team's submitted models were evaluated using the test dataset, with the tea
   <img src="./img1/f1.png" width="90%"/>
 </p>
 
-Ultimately, our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants. The final leaderboard results are here:
+Ultimately, our team, **jookisthebest**, placed **12th place** out of **887 teams** and 1439 participants. The final leaderboard results are below:
 
 <p align="center">
   <img src="./img1/rankings.png" width="80%"/>
